@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devanshu Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ------importing poppins family-------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- ------importing libre franklin family-------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- ------importing league spartan family-------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&display=swap" rel="stylesheet">
+    <!-- ---------scroll reveal---------- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://kit.fontawesome.com/62b407e68d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Dev's logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Work Experience</a></li>
+                    <li><a href="#portfolio">My Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="header-text-hi">Hi, There!</p>
+                <h1 class="header-text-name">I'm <span>Devanshu Sharma</span></h1>
+                <h3 class="multi-text">a <span class="multiple-text"></span></h3>
+                <div class="social-icons-frontpage">
+                    <!-- <a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a> -->
+                    <a href="https://www.linkedin.com/in/devanshusharma10/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/emDevanshu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://leetcode.com/devanshusharma0223/" target="_blank"><i class="fa-solid fa-code"></i></a>
+                    <a href="https://www.hackerrank.com/devanshusharma10?hr_r=1" target="_blank"><i class='fab fa-hackerrank'></i></a>
+                    <a href="https://www.youtube.com/channel/UCRW2kRM8s0dlBRqhWjFleiw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------- ABOUT------------------- -->
+
+    <div id="about">
+        <div class="container reveal">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me4.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>"A diligent Computer Science student with some experience in areas of frontend development and problem solving using multiple frameworks & different programming languages..
+                        Aiming to leverage teamwork and leadership skills to successfully achieve the goal of becoming a software developer. Frequently praised as focused by my peers and a great music lover."</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul style="list-style: none">
+                            <li><span>Programming Languages</span><br>
+                                <p>• Java(Proficient) &nbsp;&nbsp;&nbsp; • C/C++ &nbsp;&nbsp;&nbsp; • Python &nbsp;&nbsp;&nbsp;</p>
+                                <p>• HTML &nbsp;&nbsp;&nbsp; • CSS &nbsp;&nbsp;&nbsp; • Javascript</p>
+                            </li>
+                            <li><span>Core Skills</span><br>
+                                <p>• Data Structures and Algorithms &nbsp;&nbsp;&nbsp; • Problem Solving</p>
+                            </li>
+                            <li><span>Non-Technical Skills</span><br>
+                                <p>• Communication skills, Critical thinking &nbsp;&nbsp;&nbsp; • Teamwork, Leadership</p>
+                                <p>• Enthusiastic learner & Creative.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Codeclause (Java Development Intern)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                <i style="color: rgb(204, 212, 212); font-size: 12px;">Jun,2023 - Jul,2023</i></span><br>A one month virtual internship as a Java Development intern where I had to complete certain assigned tasks, as a result of which I was able to pickup lot more new skills and variety of technology.</li>
+                            <li><span>ROTARACT CLUB OF GL BAJAJ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                <i style="color: rgb(204, 212, 212); font-size: 12px;">Jul,2022 - Jul,2023</i></span><br>Director of Professional Development</li>
+                            <li><span>Music &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <i style="color: rgb(204, 212, 212); font-size: 12px;">Aug,2022 - present</i></span><br>Director of Music Avenue, GL Bajaj</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>College &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; <i style="color: rgb(204, 212, 212); font-size: 12px;">Aug,2020 - Jun,2024</i></span><br>GL Bajaj Institute of Technology and Mangement <i style="color: rgba(246, 210, 110, 0.964); font-size: 13px;">&emsp; (Greater Noida)</i> <br>
+                            &emsp; ~ B.TECH in Computer Science and Engineering</li>
+                            <li><span>INTERMEDIATE &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i style="color: rgb(204, 212, 212); font-size: 12px;">May,2020</i></span><br>ISC Board | St. Joseph's Senior Secondary School <i style="color: rgba(246, 210, 110, 0.964); font-size: 13px;">&emsp; (Greater Noida)</i></li>
+                            <li><span>HIGH SCHOOL &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i style="color: rgb(204, 212, 212); font-size: 12px;">May,2018</i></span><br>ISCE Board | St. Joseph's Senior Secondary School<i style="color: rgba(246, 210, 110, 0.964); font-size: 13px;">&emsp; (Greater Noida)</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------- Work Experience---------------->
+    <div id="services">
+        <div class="container reveal">
+            <h1 class="sub-title" style="color: rgba(246, 210, 110, 0.964);">Work Experience</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>CodeClause Intern</h2>
+                    <p>A one month virtual internship as a Java Development intern where I had to complete certain assigned tasks, as a result of which I was able to pickup lot more new skills and variety of technology. I was able to enhance my skills in Java Development by working on Java Swing Toolkit as well as Java Spring framework. Projects made during the internship are PDF Splitter, Text Editor and URL Shortener.</p>
+                    <a id="learnmore" href="https://www.linkedin.com/posts/devanshusharma10_task3-internship-github-activity-7075775337598492672-0Jlb?utm_source=share&utm_medium=member_desktop" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Volunteer Service</h2>
+                    <p>Worked as the Director of Professional Development in Rotaract Club of GL Bajaj. I was able to conduct many projects and community services drives, with the aim of empowering all domains of society especially the less priviledge ones. Few of my projects were, Project Sashakt <i style="font-size: 15px;">(career guidance program for students)</i>, Project Seekh <i style="font-size: 15px;">(educational session with poor people, stationary distribution & food donation)</i> . I also conducted a photography competition <i style="font-size: 15px;">"la-photographie".</i> </p>
+                    <a id="learnmore" href="https://instagram.com/rotaractglbajaj?igshid=MzNlNGNkZWQ4Mg==">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Others</h2>
+                    <p><ul>
+                        <li>Attending Wipro TalentNext Training program.</li>
+                        <li>Working as Director of Music Avenue, GL Bajaj.</li>
+                        <li>Member of Sports Committee, GL Bajaj.</li>
+                        <li>Teaching and mentoring students as well as giving piano lessons.</li>
+                    </ul></p>
+                    <!-- <a id="learnmore" href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------- My Work -------------------- -->
+    <div id="portfolio">
+        <div class="container reveal">
+            <h1 style="color: rgb(145, 216, 251);" class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/mywork1.png" alt="">
+                    <div class="layer">
+                        <h3>Automatic Speech Recognition System</h3>
+                        <p>An intelligent system that is capable of recognising human voice and able to convert it into text(English). Conversely, it can convert text into speech. <br>Technologies used are HTML, CSS, Javascript, Bootstrap, Web Speech API.</p>
+                        <a href="https://github.com/emDevanshu" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/mywork2.png" alt="">
+                    <div class="layer">
+                        <h3>PDF Splitter</h3>
+                        <p>A Java application used to to split PDF's according to the user's desired range. A user inputs a PDF file and enters a range in a dialog box and gets the output PDF saved on the desktop. <br> Technologies used are Apache PDFBox library, Java Swing.</p>
+                        <a href="https://github.com/emDevanshu/PDF_Splitter" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/mywork3.png" alt="">
+                    <div class="layer">
+                        <h3>Text Editor</h3>
+                        <p>A custom text editor that provides functions like cut, copy, paste, select, change font size, change theme of editor. You can also create, edit & save .txt files. <br> Technologies used are Java Swing and Apache Commons Library.</p>
+                        <a href="https://github.com/emDevanshu/Text_Editor" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/emDevanshu" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----------contact------------- -->
+
+    <div id="contact">
+        <div class="container reveal">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title-contact">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>devanshusharma0223@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9315438609</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/emdevanshu/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/devanshusharma10/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/emDevanshu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1MHxyMHrQgpeqtR8v9h0D-Z2_rR0hKzVt/view?usp=sharing" target="_blank" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Devanshu Sharma. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!------ Automatic typing ---->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration : 2500,
+            // delay: 400
+        });
+
+        ScrollReveal().reveal('.header-text-hi, .sub-title', {distance:'80px', delay:300 , origin : 'right'});
+        ScrollReveal().reveal('.about-col-1', {distance: '80px', delay:300 , origin : 'left'});
+        ScrollReveal().reveal('.social-icons-frontpage i', {distance: '230px', delay:300 , origin : 'bottom', interval : 250});
+        ScrollReveal().reveal('.header-text-name', {opacity:0, distance:'350px', delay:200 , origin : 'right'});
+        ScrollReveal().reveal('.multi-text', {distance: '90px', delay:300 , origin : 'left'});
+    </script>
+    
+    
+    
+</body>
+</html>
