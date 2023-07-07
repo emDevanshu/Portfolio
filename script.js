@@ -44,7 +44,7 @@ function reveal(){
 
 // Automatic Typing 
 const typed = new Typed('.multiple-text', {
-    strings : ['Programmer.','Frontend Developer.', 'Java Developer.', 'Youtuber.', 'Basketball lover.'],
+    strings : ['Programmer.','Frontend Developer.', 'Java Developer.', 'Youtuber.', 'Basketball lover..'],
     typeSpeed : 80,
     backSpeed : 80,
     backDelay : 1000,
