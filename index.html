@@ -56,11 +56,12 @@
 
     <!----------------- ABOUT------------------- -->
 
-    <div id="about">
+    <div style="background: linear-gradient(45deg, #141823,#1d212b, #1a2031 ,#2c1738 ,#620623);" id="about">
         <div class="container reveal">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/me4.png">
+                    <img src="images/Digital_Agency_images/man.png">
+                    <img src="images/Digital_Agency_images/elements.png" class="elements">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
@@ -110,24 +111,24 @@
         </div>
     </div>
 
-    <!------------- Work Experience---------------->
+    <!-------------------- Work Experience --------------------->
     <div id="services">
         <div class="container reveal">
             <h1 class="sub-title" style="color: rgba(246, 210, 110, 0.964);">Work Experience</h1>
             <div class="services-list">
-                <div>
+                <div class="services-list-card">
                     <i class="fa-solid fa-code"></i>
                     <h2>CodeClause Intern</h2>
                     <p>A one month virtual internship as a Java Development intern where I had to complete certain assigned tasks, as a result of which I was able to pickup lot more new skills and variety of technology. I was able to enhance my skills in Java Development by working on Java Swing Toolkit as well as Java Spring framework. Projects made during the internship are PDF Splitter, Text Editor and URL Shortener.</p>
                     <a id="learnmore" href="https://www.linkedin.com/posts/devanshusharma10_task3-internship-github-activity-7075775337598492672-0Jlb?utm_source=share&utm_medium=member_desktop" target="_blank">Learn more</a>
                 </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
+                <div class="services-list-card">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
                     <h2>Volunteer Service</h2>
-                    <p>Worked as the Director of Professional Development in Rotaract Club of GL Bajaj. I was able to conduct many projects and community services drives, with the aim of empowering all domains of society especially the less priviledge ones. Few of my projects were, Project Sashakt <i style="font-size: 15px;">(career guidance program for students)</i>, Project Seekh <i style="font-size: 15px;">(educational session with poor people, stationary distribution & food donation)</i> . I also conducted a photography competition <i style="font-size: 15px;">"la-photographie".</i> </p>
-                    <a id="learnmore" href="https://instagram.com/rotaractglbajaj?igshid=MzNlNGNkZWQ4Mg==">Learn more</a>
+                    <p>Worked as the Director of Professional Development in Rotaract Club of GL Bajaj. I was able to conduct many projects and community services drives, with the aim of empowering all domains of society especially the less priviledge ones. Few of my projects were, Project Sashakt <i style="font-size: 15px;">(career guidance program)</i>, Project Seekh <i style="font-size: 15px;">(educating poor people)</i> . I also conducted a photography competition <i style="font-size: 15px;">"la-photographie".</i> </p>
+                    <a id="learnmore" href="https://instagram.com/rotaractglbajaj?igshid=MzNlNGNkZWQ4Mg==" target="_blank">Learn more</a>
                 </div>
-                <div>
+                <div class="services-list-card">
                     <i class="fa-brands fa-app-store-ios"></i>
                     <h2>Others</h2>
                     <p><ul>
@@ -152,7 +153,7 @@
                     <div class="layer">
                         <h3>Automatic Speech Recognition System</h3>
                         <p>An intelligent system that is capable of recognising human voice and able to convert it into text(English). Conversely, it can convert text into speech. <br>Technologies used are HTML, CSS, Javascript, Bootstrap, Web Speech API.</p>
-                        <a href="https://github.com/emDevanshu" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/emDevanshu/Automatic-Speech-Recognition" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -182,7 +183,7 @@
         <div class="container reveal">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title-contact">Contact me</h1>
+                    <h1 class="sub-title-contact">Contact <span style="color: rgb(233,205,122);">me</span></h1>
                     <p><i class="fa-solid fa-paper-plane"></i>devanshusharma0223@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>9315438609</p>
                     <div class="social-icons">
@@ -192,13 +193,16 @@
                     </div>
                     <a href="https://drive.google.com/file/d/1MHxyMHrQgpeqtR8v9h0D-Z2_rR0hKzVt/view?usp=sharing" target="_blank" download class="btn btn2">Download CV</a>
                 </div>
-                <div class="contact-right">
+                <!-- <div class="contact-right">
                     <form>
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                </div> -->
+                <div class="contact-right">
+                    <img class="contact-img" src="images/me4.png" style="height: 300px; width: 500px; margin: 10% 15%;">
                 </div>
             </div>
         </div>
@@ -222,7 +226,9 @@
         ScrollReveal().reveal('.about-col-1', {distance: '80px', delay:300 , origin : 'left'});
         ScrollReveal().reveal('.social-icons-frontpage i', {distance: '230px', delay:300 , origin : 'bottom', interval : 250});
         ScrollReveal().reveal('.header-text-name', {opacity:0, distance:'350px', delay:200 , origin : 'right'});
-        ScrollReveal().reveal('.multi-text', {distance: '90px', delay:300 , origin : 'left'});
+        ScrollReveal().reveal('.multi-text, .sub-title-contact' , {distance: '90px', delay:300 , origin : 'left'});
+        ScrollReveal().reveal('.services-list-card', {distance : '2000px' , delay:100, origin:'left', interval : 250});
+        ScrollReveal().reveal('.contact-img' , {distance: '90px', delay:300 , origin : 'right'});
     </script>
     
     

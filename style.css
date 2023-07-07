@@ -8,12 +8,14 @@ html{
 }
 body{
     background: #1d212b;
+    /* background: linear-gradient(45deg, #1d212b, #2a2329); */
     /* background : #15181f   this is darker shade*/
     font-family: 'Poppins', sans-serif;
     color: white;
 }
 #header {
     background: #1e2529;
+    background: white;
     width: 100%;
     height: 100vh;
     background-image: url(images/background-blue.png);
@@ -125,11 +127,29 @@ nav ul li a:hover::after{
 }
 .about-col-1{
     flex-basis: 35%;
+    position: relative;
 }
 .about-col-1 img{
     margin-top: 20px;
     width: 100%;
     border-radius: 15px;
+}
+.elements {
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: move 2.0s linear infinite;
+}
+@keyframes move {
+    0% {
+        transform: translate(-8px,5px);
+    }
+    50% {
+        transform: translate(0px,-8px);
+    }
+    100% {
+        transform: translate(-8px,5px); 
+    }
 }
 .about-col-2{
     flex-basis: 60%;
@@ -227,7 +247,6 @@ nav ul li a:hover::after{
     background: rgb(119, 183, 197);
     transform: translateY(-10px);
 }
-
 /* ---------- My work ------------- */
 #portfolio {
     padding: 50px 0;
@@ -305,6 +324,8 @@ nav ul li a:hover::after{
 }
 .btn:hover{
     background: rgb(145, 216, 251);
+    transform: translateY(-5px);
+    transition: 0.4s ease;
 
 }
 
