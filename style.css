@@ -31,6 +31,15 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+/* .head {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 85%;
+    height: 11%;
+    background: #16181e;
+    z-index: 100;
+} */
 .logo {
     width: 220px;
 }
@@ -159,6 +168,7 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
     color: white;
+    margin-top: -2%;
 }
 .tab-title{
     display: flex;
@@ -216,7 +226,7 @@ nav ul li a:hover::after{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .services-list div{
     background: #262626;
@@ -247,6 +257,29 @@ nav ul li a:hover::after{
     background: rgb(119, 183, 197);
     transform: translateY(-10px);
 }
+.reveal-text {
+    overflow: hidden;
+  }
+  
+  .reveal-text span {
+    display: inline-block;
+    animation: rev 2s linear forwards;
+    opacity: 0;
+    /* animation-iteration-count: 1; */
+  }
+  
+  @keyframes rev { 
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
 /* ---------- My work ------------- */
 #portfolio {
     padding: 50px 0;
