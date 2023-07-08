@@ -8,17 +8,14 @@ html{
 }
 body{
     background: #1d212b;
-    /* background: linear-gradient(45deg, #1d212b, #2a2329); */
-    /* background : #15181f   this is darker shade*/
     font-family: 'Poppins', sans-serif;
     color: white;
 }
 #header {
-    background: #1e2529;
-    background: white;
+    background: #16181e;
     width: 100%;
     height: 100vh;
-    background-image: url(images/background-blue.png);
+    background-image: url(images/homePage.webp);
     background-size: cover;
     background-position: center;
 }
@@ -31,15 +28,6 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-/* .head {
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    width: 85%;
-    height: 11%;
-    background: #16181e;
-    z-index: 100;
-} */
 .logo {
     width: 220px;
 }
@@ -78,17 +66,11 @@ nav ul li a:hover::after{
     font-family: 'League Spartan', sans-serif;
     font-style: normal;
     font-weight: 10px;
-    /* color: rgb(180, 150, 97); */
-    /* color: rgb(120, 90, 82); */
     color: rgb(218, 217, 217);
 }
 .header-text h1{
     font-size: 60px;
     margin-top: 10px;
-
-    /* opacity: 0.3;
-    margin: 0;
-    animation: ani2 0.75s ease-out 3s forwards; */
 }
 .header-text h3{
     font-size: 25px
@@ -118,7 +100,6 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons-frontpage a:hover{
-    /* color: rgb(180, 150, 97); */
     color: rgba(246, 210, 110, 0.964);
     transform: translateY(-5px);
 }
@@ -253,7 +234,6 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    /* background: #ff004f; */
     background: rgb(119, 183, 197);
     transform: translateY(-10px);
 }
@@ -304,7 +284,6 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    /* background: linear-gradient(rgba(0,0,0,0.6), #ff004f); */
     background: linear-gradient(rgba(0,0,0,0.6), #ff9122);
     border-radius: 10px;
     position: absolute;
@@ -347,7 +326,6 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    /* border: 1px solid #ff004f; */
     border: 1px solid rgb(145, 216, 251);
     padding: 14px 50px;
     border-radius: 6px;
